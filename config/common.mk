@@ -196,6 +196,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/padrepio/overlay/no-rro
 
 PRODUCT_PACKAGES += \
+    FontFranciscusOverlay \
     NetworkStackOverlay \
     TrebuchetOverlay
 
@@ -209,6 +210,9 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 include vendor/padrepio/config/version.mk
 
 -include vendor/padrepio-priv/keys/keys.mk
+
+# Fonts
+include vendor/padrepio/config/fonts.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/padrepio/config/partner_gms.mk

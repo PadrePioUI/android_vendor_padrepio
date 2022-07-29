@@ -1,0 +1,8 @@
+<fonts-modification version="1">
+  <family customizationType="new-named-family" name="franciscus">
+    <font weight="400" style="normal">Franciscus-Regular.ttf</font>
+    <font weight="300" style="normal">Franciscus-Light.ttf</font>
+    <font weight="500" style="normal">Franciscus-SemiBold.ttf</font>
+    <font weight="700" style="normal">Franciscus-Bold.ttf</font>
+  </family>
+</fonts-modification>
