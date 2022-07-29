@@ -12,18 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/generic/car/gsi_car_x86_64.mk)
+include vendor/padrepio/build/target/product/lineage_generic_tv_target.mk
 
-include vendor/lineage/build/target/product/lineage_generic_car_target.mk
+$(call inherit-product, device/google/atv/products/sdk_atv_armv7.mk)
 
-PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
-
+TARGET_USES_64_BIT_BINDER := true
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/Home/Home.apk
+# Overrides
+PRODUCT_NAME := lineage_sdk_tv_arm
+PRODUCT_MODEL := LineageOS Android TV SDK built for ARM
 
-PRODUCT_NAME := lineage_gsi_car_x86_64
+PRODUCT_SDK_ADDON_NAME := lineage
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties

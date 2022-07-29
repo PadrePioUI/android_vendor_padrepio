@@ -2,7 +2,7 @@
 
 bootstrap_go_package {
     name: "soong-lineage-generator",
-    pkgPath: "lineage/soong/generator",
+    pkgPath: "padrepio/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
