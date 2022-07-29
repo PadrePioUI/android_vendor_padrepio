@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
 
 # Ringtones
 PRODUCT_COPY_FILES += \
+    $(RINGTONE_PATH)/AveMaria.mp3:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/AveMaria.mp3 \
     $(RINGTONE_PATH)/Boxbeat.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Boxbeat.ogg \
     $(RINGTONE_PATH)/CyanTone.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/CyanTone.ogg \
     $(RINGTONE_PATH)/Highscore.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Highscore.ogg \
