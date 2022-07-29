@@ -208,6 +208,10 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     TrebuchetOverlay
 
+# The Holy Bible
+PRODUCT_PACKAGES += \
+    HolyBiblePrebuilt
+
 # Translations
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
