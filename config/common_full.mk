@@ -35,3 +35,5 @@ PRODUCT_PACKAGES += \
     fonts_customization.xml \
     FontLatoOverlay \
     FontRubikOverlay
+
+$(call inherit-product, packages/overlays/PadrePio/fonts/fonts.mk)
