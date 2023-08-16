@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
+    FontFranciscusOverlay \
     FontLatoOverlay \
     FontRubikOverlay
 
